@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Looney</title>
+    <link rel="icon" type="image/x-icon" href="../picture/logo.ico">
+    <style>
+    table{
+      border:1px solid white;
+      border-collapse: collapse;
+      position: relative;
+      line-height: 36px;
+      color:white
+    }
+    th,td{
+      border:1px solid grey;
+    }
+    tbody{
+      font-size:20px
+
+    }
+    img{
+      position: relative;
+      left: 30%;
+    }
+    h1{
+      text-align: center;
+      font-size: 40px;
+      color: white;
+    }
+    h2,h3,h4,h5{
+      text-align: center;
+      font-size: 32px;
+      color: white;
+    }
+    p{
+      text-indent: 32px;
+      font-size:20px;
+      line-height: 32px;
+      color: white;
+    }
+    div.left{
+      float:left;
+      position: relative;
+      left:14%;
+    }
+    div.right{
+      float:right;
+      position: relative;
+      right:14%;
+    }
+    div.next{
+      clear: left
+    }
+    button#score{
+      width: 370px; /* 宽度 */
+      height: 50px; /* 高度 */
+      border-width: 2px; /* 边框宽度 */
+      border-radius: 4px; /* 边框半径 */
+      background: #1E90FF; /* 背景颜色 */
+      cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+      outline: none; /* 不显示轮廓线 */
+      color: white; /* 字体颜色 */
+      font-size: 17px; /* 字体大小 */
+    }
+    body{
+      background-image: url("../picture/b23.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    video{
+      position:relative;
+      left:16%;
+    }
+  </style>
+</head>
+<body>
+<h1>Kevon Looney</h1>
+<img src="../picture/Looney1.jpg" width="40%" >
+<h2>球员资料</h2>
+<p>凯文·鲁尼（Kevon Looney），1996年2月6日出生于美国威斯康星州密尔沃基（Milwaukee, Wisconsin），
+  美国职业篮球运动员，司职前锋，效力于NBA金州勇士队。</p>
+<p>2015年NBA选秀，凯文·鲁尼于首轮第30顺位被金州勇士队选中，从而进入NBA，职业生涯共三次夺得NBA总冠军.
+</p>
+<h3>球员情况</h3>
+
+<div class="left">
+<table>
+  <tr>
+    <td>中文名</td>
+    <td>凯文·鲁尼</td>
+  </tr>
+  <tr>
+    <td>英文名</td>
+    <td>Kevon Looney</td>
+  </tr>
+  <tr>
+    <td>别名</td>
+    <td>鲁姥爷</td>
+  </tr>
+  <tr>
+    <td>国籍</td>
+    <td>美国</td>
+  </tr>
+  <tr>
+    <td>生日</td>
+    <td>1996年2月6日</td>
+  </tr>
+  <tr>
+    <td>身高</td>
+    <td>2.06m</td>
+  </tr>
+  <tr>
+    <td>体重</td>
+    <td>100kg</td>
+  </tr>
+  <tr>
+    <td>毕业院校</td>
+    <td>加利福尼亚大学洛杉矶分校 </td>
+  </tr>
+</table>
+</div>
+
+<div class="right">
+  <table>
+  <tr>
+    <td>NBA选秀</td>
+    <td>2015年首轮第30位被勇士队选中
+    </td>
+  </tr>
+  <tr>
+    <td>位置</td>
+    <td>中锋</td>
+  </tr>
+  <tr>
+    <td>惯用手</td>
+    <td>右手</td>
+  </tr>
+  <tr>
+    <td>号码</td>
+    <td>5号</td>
+  </tr>
+  <tr>
+    <td>特点</td>
+    <td>队内内线支柱，有良好的篮板球意识，和出色的传球意识</td>
+  </tr>
+  <tr>
+    <td>主要成就</td>
+    <td>
+      <ul>
+        <li>3届NBA总冠军</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>单场最多篮板数</td>
+    <td>20个</td>
+  </tr>
+</table>
+</div>
+
+<div class="next">
+
+</div>
+
+<div class="mv">
+  <h5>球员精彩表现</h5>
+  <video src="../vedio/Looney.mp4" width="960" height="540" poster="../picture/Looney2.jpg"controls>
+    无法播放</video>
+  <p style="text-align: center;">(视频来源：网页作者)</p>
+</div>
+
+<h4>球员评分</h4>
+<button id="score" style="position: relative;left:38%;font-size:32px;border-radius: 15px">
+  点击此处给该球员打分</button>
+<script type="text/javascript">
+  var s=document.getElementById("score")
+  s.onclick=function(){
+    alert("点击确定，进入打分页面")
+    window.location.href='../score/01.html'
+  }
+</script>
+
+<p>
+  <button id="back" style="position: relative;left:0%;font-size:20px">返回上一页</button>
+  <button id="home" style="position: relative;left:0%;font-size:20px">返回首页</button>
+  <button id="next" style="position: relative;left:65%;font-size:20px">查看下一个球员Poole</button>
+  <script type="text/javascript">
+    var s=document.getElementById("back")
+    s.onclick=function(){
+      window.history.back(-1);
+    }
+    var s1=document.getElementById("home")
+    s1.onclick=function(){
+      window.location.href="../home page/01.html"
+    }
+    var s2=document.getElementById("next")
+    s2.onclick=function(){
+      window.location.href="../players/Poole.html"
+    }
+  </script>
+</p>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>球员介绍</title>
+    <link rel="icon" type="image/x-icon" href="../picture/logo.ico">
+    <style>
+        img#logo{
+            width:12%;
+            top:4px;
+            position: relative;
+            left:41%
+         }
+        div.title{
+            background-color: black;
+        }
+        h1{
+            font-size:48px;
+            color:white;
+            position: relative;
+            left:40%;
+            float:left;
+            bottom: 5px;
+        }
+        img.p{
+            width:16.6%;
+            float:left;
+            transition: 1s;
+        }
+        img.p:hover{
+            transform:translate(0,100px) scale(1.5,1.5)
+        }
+        .player{
+            clear:left
+        }
+        body{
+            background-image: url("../picture/b27.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        span{
+            font-size: 32px;
+            color: white;
+        }
+        div.name{
+            clear:left
+        }
+        div.back{
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+
+<div class="title">
+    <h1>球员介绍</h1>
+    <img src="../picture/logo3.jpg" id="logo" >
+</div>
+
+<div class="name">
+    <span style="position: relative;left:6%">Curry</span>
+    <span style="position:relative;left:14%">Thompson</span>
+    <span style="position:relative;left:23%">Green</span>
+    <span style="position:relative;left:33%">Wiggins</span>
+    <span style="position:relative;left:42%">Looney</span>
+    <span style="position:relative;left:53%">Poole</span>
+</div>
+
+<div class="player">
+    <a href="../players/Curry.html"><img class="p" src="../picture/Curry1.jpg" id="1"></a>
+    <a href="../players/Klay.html"><img class="p" src="../picture/Klay1.jpg" id="2"></a>
+    <a href="../players/Green.html"><img class="p" src="../picture/Green1.jpg" id="3"></a>
+    <a href="../players/Wiggins.html"><img class="p" src="../picture/Wiggins1.jpg" id="4"></a>
+    <a href="../players/Looney.html"><img class="p" src="../picture/Looney1.jpg" id="5"></a>
+    <a href="../players/Poole.html"><img class="p" src="../picture/Poole1.jpg" id="6"></a>
+
+</div>
+
+<div class="back">
+    </br></br></br></br></br></br></br></br>
+    <button id="home" style="position: relative;left:0%;font-size:20px">返回首页</button>
+    <script>
+        var s1=document.getElementById("home")
+        s1.onclick=function(){
+            window.location.href="../home page/01.html"
+        }
+    </script>
+</div>
+
+</body>
+</html>

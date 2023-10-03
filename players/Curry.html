@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curry</title>
+    <link rel="icon" type="image/x-icon" href="../picture/logo.ico">
+    <style>
+        table{
+            border:1px solid white;
+            border-collapse: collapse;
+            position: relative;
+            line-height: 36px;
+            color: white;
+        }
+        th,td{
+            border:1px solid grey;
+        }
+        tbody{
+            font-size:20px
+
+        }
+        img{
+            position: relative;
+            left: 30%;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+            color: white;
+        }
+        h2,h3,h4,h5{
+            text-align: center;
+            font-size: 32px;
+            color: white;
+        }
+        p{
+            text-indent: 32px;
+            font-size:20px;
+            line-height: 32px;
+            color:white
+        }
+        div.left{
+            float:left;
+            position: relative;
+            left:15%;
+        }
+        div.right{
+            float:right;
+            position:relative;
+            right:15%;
+        }
+        div.next{
+            clear:left;//停止左侧浮动
+        }
+        button#score{
+            width: 370px; /* 宽度 */
+            height: 50px; /* 高度 */
+            border-width: 2px; /* 边框宽度 */
+            border-radius: 4px; /* 边框半径 */
+            background: #1E90FF; /* 背景颜色 */
+            cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+            outline: none; /* 不显示轮廓线 */
+            color: white; /* 字体颜色 */
+            font-size: 17px; /* 字体大小 */
+        }
+        body{
+            background-image: url("../picture/b23.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        video{
+            position:relative;
+            left:16%;
+        }
+    </style>
+</head>
+<body>
+<h1>Stephen Curry</h1>
+<img src="../picture/Curry1.jpg" width="40%" >
+<h2>球员资料</h2>
+<p>斯蒂芬·库里（Stephen Curry），1988年3月14日出生于美国俄亥俄州阿克伦，美国职业篮球运动员，司职控球后卫，
+        效力于NBA金州勇士队。</p>
+<p>斯蒂芬·库里于2009年通过选秀进入NBA后一直效力于金州勇士队，新秀赛季入选最佳新秀第一阵容；2014-15、2016-17、
+    2017-18赛季、2021-22赛季四次夺得NBA总冠军，并于2021-22赛季当选总决赛MVP（FMVP）；两次荣膺常规赛MVP；
+    2015-16、2020-21赛季两次荣膺常规赛得分王；2021-22赛季荣膺西部决赛MVP；8次入选最佳阵容（4次一阵、3次二阵、1次三阵）；
+    8次入选全明星首发阵容，2021年10月入选NBA75大巨星，12月成为NBA历史三分王，2022年荣膺全明星正赛MVP。
+</p>
+<h3>球员情况</h3>
+<div class="left">
+<table>
+    <tr>
+        <td>中文名</td>
+        <td>斯蒂芬·库里</td>
+    </tr>
+    <tr>
+        <td>英文名</td>
+        <td>Stephen Curry</td>
+    </tr>
+    <tr>
+        <td>别名</td>
+        <td>萌神、小学生</td>
+    </tr>
+    <tr>
+        <td>国籍</td>
+        <td>美国</td>
+    </tr>
+    <tr>
+        <td>生日</td>
+        <td>1988年3月14日</td>
+    </tr>
+    <tr>
+        <td>身高</td>
+        <td>1.88m</td>
+    </tr>
+    <tr>
+        <td>体重</td>
+        <td>84kg</td>
+    </tr>
+    <tr>
+        <td>毕业院校</td>
+        <td>戴维森学院</td>
+    </tr>
+    <tr>
+        <td>NBA选秀</td>
+        <td>2007年第7顺位被金州勇士队选中</td>
+    </tr>
+    <tr>
+        <td>位置</td>
+        <td>控球后卫</td>
+    </tr>
+</table>
+</div>
+
+<div class="right">
+    <table>
+    <tr>
+        <td>惯用手</td>
+        <td>右手</td>
+    </tr>
+    <tr>
+        <td>号码</td>
+        <td>30号</td>
+    </tr>
+    <tr>
+        <td>特点</td>
+        <td>投篮准、出手速度快、善于抢断与投三分球</td>
+    </tr>
+    <tr>
+        <td>主要成就</td>
+        <td>
+           <ul>
+               <li>2届NBA赛季MVP</li>
+               <li>1届NBA总决赛FMVP</li>
+               <li>4届NBA总冠军</li>
+               <li>NBA历史三分王</li>
+           </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>单场最高得分</td>
+        <td>62分</td>
+    </tr>
+    <tr>
+        <td>单场三分球最多进球数</td>
+        <td>13个</td>
+    </tr>
+</table>
+</div>
+
+<div class="next">
+
+</div>
+
+<div class="mv">
+    <h5>球员精彩表现</h5>
+    <video src="../vedio/Curry2.mp4" width="960" height="540" poster="../picture/Curry2.jpg"controls>
+        无法播放</video>
+    <p style="text-align: center;">(视频来源：腾讯体育)</p>
+</div>
+
+    <div>
+<h4>球员评分</h4>
+<button id="score" style="position: relative;left:38%;font-size:32px;border-radius: 15px">
+    点击此处给该球员打分</button>
+<script type="text/javascript">
+    var s=document.getElementById("score")
+    s.onclick=function(){
+        alert("点击确定，进入打分页面")
+        window.location.href='../score/01.html'
+    }
+</script>
+
+<p>
+    <button id="back" style="position: relative;left:0%;font-size:20px">返回上一页</button>
+    <button id="home" style="position: relative;left:0%;font-size:20px">返回首页</button>
+    <button id="next" style="position: relative;left:63%;font-size:20px">查看下一个球员Thompson</button>
+    <script type="text/javascript">
+        var s=document.getElementById("back")
+        s.onclick=function(){
+            window.history.back(-1);
+        }
+        var s1=document.getElementById("home")
+        s1.onclick=function(){
+            window.location.href="../home page/01.html"
+        }
+        var s2=document.getElementById("next")
+        s2.onclick=function(){
+            window.location.href="../players/Klay.html"
+        }
+    </script>
+
+</p>
+</div>
+</body>
+</html>

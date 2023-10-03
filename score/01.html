@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>球员打分</title>
+    <link rel="icon" type="image/x-icon" href="../picture/logo.ico">
+    <style>
+        body{
+            background-image: url("../picture/b4.png");
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        h1{
+            text-align: center;
+            font-size: 48px;
+            float:left;
+            position: relative;
+            left:40%
+        }
+        img#t1{
+            position: relative;
+             left:40%;
+            width: 10%;
+         }
+        img#x1{
+            float:right;
+            border-collapse: collapse;
+            border-style:double
+        }
+        legend{
+            font-weight: bold;
+            font-family: "Fira Code Medium";
+        }
+        fieldset{
+            font-family:STFangsong;
+            //background-color: beige;
+            background-color: aliceblue;
+        }
+        fieldset#qy{
+            float:left;
+            padding: 20px;
+            margin: 0 auto;
+            margin-top: 10px;
+            width: 120px;
+            height: 70px;
+            //background-color:snow;
+            margin-left:100px;
+        }
+        fieldset#zp{
+            float:right;
+            border: powderblue 3px solid;
+            padding: 20px;
+            margin: 0 auto;
+            margin-top: 10px;
+            width: 450px;
+            height: 100px;
+            //background-color:snow;
+            margin-right: 10px;
+        }
+        fieldset#fp{
+            clear:left;
+            border: darkseagreen 3px solid;
+            padding: 20px;
+            margin-top:300px;
+            width: 550px;
+            height: 100px;
+            margin-left:5px ;
+            //background-color: snow;
+        }
+        fieldset#wz{
+            border:lightsteelblue 3px solid;
+            padding: 20px;
+            margin: 0 auto;
+            margin-top: 10px;
+            width: 550px;
+            height: 100px;
+            margin-right:450px ;
+            //background-color: snow;
+        }
+        div.title{
+            background-image: url("../picture/b8.jpg");
+            background-position-x: 100px;
+            background-position-y: 100px;
+            margin-top: 0px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="title">
+<h1>打分界面</h1>
+    <img src="../picture/t1.jpg" id="t1">
+</div>
+
+<div>
+    <span style="position: relative;left:5%;font-family: STHupo;font-size:28px;color: white">
+        快来为你喜欢的球星打分吧！</span></br>
+    <span id="pic" style="position: relative;left:80%;font-size: 32px;margin-bottom: 10px">球员帅照</span>
+</br>
+</div>
+<div id="main">
+    <img  src="../picture/Curry1.jpg" width="30%" id="x1" >
+    <form>
+        <fieldset id="qy">
+            <legend>选择</legend>
+        <label style="font-size: x-large;">选择球员：
+            <select>
+                <option onclick="player(0)">Stephen Curry</option>
+                <option onclick="player(1)">Klay Thompson</option>
+                <option onclick="player(2)">Draymond Green</option>
+                <option onclick="player(3)">Andrew Wiggins</option>
+                <option onclick="player(4)">Kevon Looney</option>
+                <option onclick="player(5)">Jordan Poole</option>
+            </select>
+        </label></fieldset>
+
+
+    <fieldset id="zp">
+        <legend>总评部分</legend>
+    <label style="font-size:xx-large">你对该球员的总体表现评价是</br><input type="range" name="score"
+    value="1" min="1" max="10" step="1" onchange="document.getElementById('show').innerHTML=value">
+        <span id="show"></span>
+    分</label></br></fieldset>
+
+        <fieldset id="fp">
+            <legend>分评部分</legend>
+        <label style="font-size:x-large">你对该球员的进攻表现评价是<input type="range" name="score"
+     value="1" min="1" max="10" step="1" onchange="document.getElementById('show1').innerHTML=value">
+        <span id="show1"></span>
+        分</label></br>
+
+        <label style="font-size:x-large">你对该球员的防守表现评价是<input type="range" name="score"
+       value="1" min="1" max="10" step="1" onchange="document.getElementById('show2').innerHTML=value">
+            <span id="show2"></span>
+            分</label><br>
+
+        <label style="font-size:x-large">你对该球员的团队贡献评价是<input type="range" name="score"
+         value="1" min="1" max="10" step="1" onchange="document.getElementById('show3').innerHTML=value">
+            <span id="show3"></span>
+            分</label></br></fieldset>
+
+        <fieldset id="wz">
+            <legend>文字部分</legend>
+        <label style="font-size:x-large">
+            在此处写下你对该球员想说的话<span style="font-size: large">（不超过50字）</span>
+            <input type="text" maxlength="50" size="90">
+        </label></br></fieldset>
+        </br>
+        <input type="submit" value="点击提交" style="font-size: x-large;color: #1E90FF;
+            position: relative;left:60%"
+               onclick="suc()">
+    </form>
+
+    <script>
+        var temp=0;
+        function suc(){
+            alert("提交成功！")
+        }
+        var pic=["../picture/Curry1.jpg","../picture/Klay2.jpg",
+            "../picture/Green1.jpg","../picture/Wiggins1.jpg",
+            "../picture/Looney1.jpg","../picture/Poole1.jpg"]
+
+        function player(n) {
+            var img = document.getElementById("x1")
+            img.src = pic[n]
+            temp=n
+        }
+    </script>
+</div>
+
+<p>
+    </br></br>
+    <button id="back" style="position: relative;left:0%;font-size:20px">返回上一页</button>
+    <button id="home" style="position: relative;left:0%;font-size:20px">返回首页</button>
+    <script type="text/javascript">
+        var s=document.getElementById("back")
+        s.onclick=function(){
+            window.history.back(-1);
+        }
+        var s1=document.getElementById("home")
+        s1.onclick=function(){
+            window.location.href="../home page/01.html"
+        }
+    </script>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Poole</title>
+  <link rel="icon" type="image/x-icon" href="../picture/logo.ico">
+  <style>
+    table{
+      border:1px solid white;
+      border-collapse: collapse;
+      position: relative;
+      line-height: 36px;
+      color: white;
+    }
+    th,td{
+      border:1px solid grey;
+    }
+    tbody{
+      font-size:20px
+
+    }
+    img{
+      position: relative;
+      left: 25%;
+    }
+    h1{
+      text-align: center;
+      font-size: 40px;
+      color: white;
+    }
+    h2,h3,h4,h5{
+      text-align: center;
+      font-size: 32px;
+      color: white;
+    }
+    p{
+      text-indent: 32px;
+      font-size:20px;
+      line-height: 32px;
+      color: white;
+    }
+    div.left{
+      float:left;
+      position: relative;
+      left:22%;
+    }
+    div.right{
+      float:right;
+      position: relative;
+      right:22%;
+    }
+    div.next{
+      clear: left
+    }
+    button#score{
+      width: 370px; /* 宽度 */
+      height: 50px; /* 高度 */
+      border-width: 2px; /* 边框宽度 */
+      border-radius: 4px; /* 边框半径 */
+      background: #1E90FF; /* 背景颜色 */
+      cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+      outline: none; /* 不显示轮廓线 */
+      color: white; /* 字体颜色 */
+      font-size: 17px; /* 字体大小 */
+    }
+    body{
+      background-image: url("../picture/b23.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    video{
+      position:relative;
+      left:20%;
+    }
+  </style>
+</head>
+<body>
+<h1>Jordan Poole</h1>
+<img src="../picture/Poole1.jpg" width="50%" >
+<h2>球员资料</h2>
+<p>乔丹·普尔（Jordan Poole），全名乔丹·安东尼·普尔（Jordan Anthony Poole），
+  1999年6月19日出生于美国威斯康星州密尔沃基，美国职业篮球运动员，司职控球后卫/得分后卫，效力于NBA金州勇士队。</p>
+<p>2019年6月21日，在2019年NBA选秀中，乔丹·普尔在首轮第28顺位被金州勇士队选中。
+  2021-22赛季，乔丹·普尔随勇士队夺得NBA总冠军。
+</p>
+<h3>球员情况</h3>
+
+<div class="left">
+<table>
+  <tr>
+    <td>中文名</td>
+    <td>乔丹·普尔</td>
+  </tr>
+  <tr>
+    <td>英文名</td>
+    <td>Jordan Poole</td>
+  </tr>
+  <tr>
+    <td>别名</td>
+    <td>茶弟</td>
+  </tr>
+  <tr>
+    <td>国籍</td>
+    <td>美国</td>
+  </tr>
+  <tr>
+    <td>生日</td>
+    <td>1999年6月19日</td>
+  </tr>
+  <tr>
+    <td>身高</td>
+    <td>1.93m</td>
+  </tr>
+  <tr>
+    <td>体重</td>
+    <td>88kg</td>
+  </tr>
+  <tr>
+    <td>毕业院校</td>
+    <td>密歇根大学</td>
+  </tr>
+</table>
+</div>
+
+<div class="right">
+  <table>
+  <tr>
+    <td>NBA选秀</td>
+    <td>2019年首轮第28位被勇士队选中 </td>
+  </tr>
+  <tr>
+    <td>位置</td>
+    <td>控球后卫/得分后卫</td>
+  </tr>
+  <tr>
+    <td>惯用手</td>
+    <td>右手</td>
+  </tr>
+  <tr>
+    <td>号码</td>
+    <td>3号</td>
+  </tr>
+  <tr>
+    <td>特点</td>
+    <td>进攻能手，年轻，进步快，十分努力，防守稍差</td>
+  </tr>
+  <tr>
+    <td>主要成就</td>
+    <td>
+      <ul>
+        <li>
+          2021-22赛季NBA总冠军
+        </li>
+      </ul>
+
+    </td>
+  </tr>
+  <tr>
+    <td>单场最高得分</td>
+    <td>43分</td>
+  </tr>
+</table>
+</div>
+
+<div class="next">
+
+</div>
+
+<div class="mv">
+  <h5>球员精彩表现</h5>
+  <video src="../vedio/Poole.mp4" width="860" height="540" poster="../picture/Poole2.jpg"controls>
+    无法播放</video>
+  <p style="text-align: center;">(视频来源：不会剪辑的果子君)</p>
+</div>
+
+<h4>球员评分</h4>
+<button id="score" style="position: relative;left:38%;font-size:32px;border-radius: 15px">
+  点击此处给该球员打分</button>
+<script type="text/javascript">
+  var s=document.getElementById("score")
+  s.onclick=function(){
+    alert("点击确定，进入打分页面")
+    window.location.href='../score/01.html'
+  }
+</script>
+
+<p>
+  <button id="back" style="position: relative;left:0%;font-size:20px">返回上一页</button>
+  <button id="home" style="position: relative;left:0%;font-size:20px">返回首页</button>
+  <script type="text/javascript">
+    var s=document.getElementById("back")
+    s.onclick=function(){
+      window.history.back(-1);
+    }
+    var s1=document.getElementById("home")
+    s1.onclick=function(){
+      window.location.href="../home page/01.html"
+    }
+  </script>
+</p>
+</body>
+</html>

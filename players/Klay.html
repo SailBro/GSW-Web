@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Klay</title>
+  <link rel="icon" type="image/x-icon" href="../picture/logo.ico">
+  <style>
+    table{
+      border:1px solid black;
+      border-collapse: collapse;
+      position: relative;
+      line-height: 36px;
+      color:white
+    }
+    th,td{
+      border:1px solid white;
+    }
+    tbody{
+      font-size:20px
+
+    }
+    img{
+      position: relative;
+      left: 34%;
+    }
+    h1{
+      text-align: center;
+      font-size: 40px;
+      color: white;
+    }
+    h2,h3,h4,h5{
+      text-align: center;
+      font-size: 32px;
+      color: white;
+    }
+    p{
+      text-indent: 32px;
+      font-size:20px;
+      line-height: 32px;
+      color: white;
+    }
+    div.left{
+      float:left;
+      position: relative;
+      left:12%;
+    }
+    div.right{
+      float:right;
+      position: relative;
+      right:12%;
+    }
+    div.next{
+      clear: left
+    }
+    button#score{
+      width: 370px; /* 宽度 */
+      height: 50px; /* 高度 */
+      border-width: 2px; /* 边框宽度 */
+      border-radius: 4px; /* 边框半径 */
+      background: #1E90FF; /* 背景颜色 */
+      cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+      outline: none; /* 不显示轮廓线 */
+      color: white; /* 字体颜色 */
+      font-size: 17px; /* 字体大小 */
+    }
+    body{
+      background-image: url("../picture/b23.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    video{
+      position:relative;
+      left:23%;
+    }
+  </style>
+</head>
+<body>
+<h1>Klay Thompson</h1>
+<img src="../picture/Klay1.jpg" width="30%" >
+<h2>球员资料</h2>
+<p>克莱·汤普森（Klay Thompson），1990年2月8日出生于美国加利福尼亚州洛杉矶（Los Angeles, California），
+  美国职业篮球运动员，司职得分后卫，效力于NBA金州勇士队。</p>
+<p>克莱·汤普森于2011年通过选秀进入NBA，新秀赛季入选最佳新秀阵容第一阵容；2014-15、2016-17、2017-18赛季
+  以及2021-22赛季四次随勇士队夺得NBA总冠军；两次入选NBA最佳阵容第三阵容；2018-19赛季入选NBA最佳防守阵容第二阵容；
+  五次入选NBA全明星阵容。
+</p>
+<h3>球员情况</h3>
+<div class="left">
+<table>
+  <tr>
+    <td>中文名</td>
+    <td>克莱·汤普森</td>
+  </tr>
+  <tr>
+    <td>英文名</td>
+    <td>Klay Thompson</td>
+  </tr>
+  <tr>
+    <td>别名</td>
+    <td>汤神、佛祖</td>
+  </tr>
+  <tr>
+    <td>国籍</td>
+    <td>美国</td>
+  </tr>
+  <tr>
+    <td>生日</td>
+    <td>1990年2月8日</td>
+  </tr>
+  <tr>
+    <td>身高</td>
+    <td>1.98m</td>
+  </tr>
+  <tr>
+    <td>体重</td>
+    <td>97.5kg</td>
+  </tr>
+  <tr>
+    <td>毕业院校</td>
+    <td>华盛顿州立大学</td>
+  </tr>
+  <tr>
+    <td>NBA选秀</td>
+    <td>2011年首轮第11顺位被金州勇士队选中</td>
+  </tr>
+  <tr>
+    <td>位置</td>
+    <td>得分后卫</td>
+  </tr>
+  <tr>
+    <td>惯用手</td>
+    <td>右手</td>
+  </tr>
+</table>
+</div>
+
+<div class="right">
+  <table>
+  <tr>
+    <td>号码</td>
+    <td>11号</td>
+  </tr>
+  <tr>
+    <td>特点</td>
+    <td>3D球员，攻守一体，擅长接球投三分</td>
+  </tr>
+  <tr>
+    <td>主要成就</td>
+    <td>
+      <ul>
+        <li>2届NBA最佳阵容第三阵容</li>
+        <li>4届NBA总冠军</li>
+        <li>5届NBA全明星阵容</li>
+        <li>1届NBA全明星三分球大赛冠军</li>
+        <li>NBA历史单场三分球进球最高记录（14个）</li>
+        <li>NBA历史单节得分最高记录（37分）</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>单场最高得分</td>
+    <td>60分</td>
+  </tr>
+  <tr>
+    <td>单场三分球最多进球数</td>
+    <td>14个</td>
+  </tr>
+</table>
+</div>
+
+<div class="next">
+
+</div>
+
+<div class="mv">
+  <h5>球员精彩表现</h5>
+  <video src="../vedio/Klay.mp4" width="800" height="540" poster="../picture/Klay3.jpg"controls>
+    无法播放</video>
+  <p style="text-align: center;">(视频来源：勇士队英文官网)</p>
+</div>
+
+
+<h4>球员评分</h4>
+<button id="score" style="position: relative;left:38%;font-size:32px;border-radius: 15px">
+  点击此处给该球员打分</button>
+<script type="text/javascript">
+  var s=document.getElementById("score")
+  s.onclick=function(){
+    alert("点击确定，进入打分页面")
+    window.location.href='../score/01.html'
+  }
+</script>
+
+<p>
+  <button id="back" style="position: relative;left:0%;font-size:20px">返回上一页</button>
+  <button id="home" style="position: relative;left:0%;font-size:20px">返回首页</button>
+  <button id="next" style="position: relative;left:65%;font-size:20px">查看下一个球员Green</button>
+  <script type="text/javascript">
+    var s=document.getElementById("back")
+    s.onclick=function(){
+      window.history.back(-1);
+    }
+    var s1=document.getElementById("home")
+    s1.onclick=function(){
+      window.location.href="../home page/01.html"
+    }
+    var s2=document.getElementById("next")
+    s2.onclick=function(){
+      window.location.href="../players/Green.html"
+    }
+  </script>
+</p>
+</body>
+</html>
